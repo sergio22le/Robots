@@ -1,0 +1,273 @@
+/* REGLAS GENERALES */
+
+/*===============================================================*/
+/* Definir las variables de colores */
+:root {
+    --color-principal: #333;
+    --color-secundario: #d33c00;
+}
+
+/*===============================================================*/
+
+/* Reset margins y paddings */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*===============================================================*/
+
+/*===============================================================*/
+/* Estilo generales */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color-principal);
+    background-color: white;
+}
+
+header {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: var(--color-principal);
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    padding: 4rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.header-nav .nav-list {
+    list-style: none;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-item a, .nav-item-active a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-item-active a {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*===============================================================*/
+/* Definir contenedor para el cuerpo de la pagina */
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: white;
+}
+
+/*===============================================================*/
+/* Diseño responsive */
+
+@media(min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media(min-width:1400px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+/*===============================================================*/
+/* Defino etiquetas principales */
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom:  10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.cursiva-decorativa {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.destacado {
+    color: var(--color-secundario);
+    font-weight: 500;
+}
+
+.destacado-cursiva {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--color-secundario);
+}
+
+/*===============================================================*/
+/* Pagina index */
+
+#robot {
+    max-width: 100%;
+}
+
+.descripcion-multimedia {
+    text-align: right;
+    font-size: 0.7rem;
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#articulo {
+    text-align: justify;
+}
+
+.lista-sin-numerar {
+    margin-left: 50px;
+}
+
+.contenedor-video {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    width: 100%;
+}
+
+#descripcion-autora {
+    background-color: rgba(175, 200, 200, 0.3);
+    text-align: center;
+}
+
+#acerca-de {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#img-autora {
+    width: 200px;
+    height: auto;
+    border-radius: 100px;
+}
+
+.datos-autora {
+    width: 75%;
+}
+
+/*===============================================================*/
+/* Pagina tipos-robots */
+
+.tipos {
+    width: 50%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cita-celebre {
+    background-color: rgba(175, 200, 200, 0.3);
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    border-left: solid 5px;
+    border-left-color: var(--color-secundario);
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.cita-texto {
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.tipos div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.icono-robot {
+    margin-right: 10px;
+    width: 25px;
+    height: auto;
+}
+
+.tipos div p {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.lista-principal, .lista-secundaria {
+    padding-left: 5rem;
+}
+
+.lista-principal {
+    list-style-type: square;
+}
+  
+.lista-secundaria {
+    padding-left: 40px;
+    list-style-type: disc;
+}
+
+/*===============================================================*/
+/* Pagina robots-ficcion */
+.robots-ficcion div article div {
+    text-align: center;
+}
+
+.robots-ficcion div article div img {
+    margin-bottom: 15px;
+}
